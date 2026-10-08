@@ -22,3 +22,6 @@ jobs:
 
       - name: Check project
         run: npm test 
+
+      - name: build Docker image
+        run: docker build -t taskmap-api .
